@@ -1,0 +1,59 @@
+// main
+main {
+  display: flex;
+}
+
+.hero {
+  position: relative;
+  width: 760px;
+}
+
+.hero__image img {
+  width: 760px;
+  height: 400px;
+}
+
+.hero__text {
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+}
+
+.hero__text--paddingleft {
+  width: 10px;
+  height: 120px;
+  display: block;
+  background: #12a4a4;
+}
+
+.hero__text--heading p,
+.hero__text--readmore p {
+  background: #12a4a4;
+  display: inline;
+  padding-right: 10px;
+  box-decoration-break: clone;
+}
+
+.hero__text--heading p {
+  padding-bottom: 10px;
+}
+
+.hero__text--heading {
+  line-height: 2.8rem;
+}
+
+.hero__text--readmore p {
+  padding-bottom: 3px;
+
+  padding-top: 5px;
+}
+
+.hero:hover {
+  cursor: pointer;
+  .hero__text--heading p,
+  .hero__text--readmore p,
+  .hero__text--paddingleft {
+    background: black;
+    display: inline;
+  }
+}
