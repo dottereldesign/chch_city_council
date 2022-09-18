@@ -7,8 +7,69 @@ body {
   margin: 0 auto;
 }
 
-// main
+// nav - topbar
+.topbar {
+  margin: 0.7em 0 1.5em 0;
+  display: flex;
+  align-items: center;
+}
 
+.topbar__logo {
+  padding-right: 9.5em;
+}
+
+.topbar__links li {
+  border: solid 1px $water;
+  padding: 1px 10px 1px 10px;
+}
+
+.topbar__links ul {
+  display: flex;
+  width: 460px;
+  justify-content: space-between;
+  padding-right: 1.5em;
+}
+
+.topbar__links a {
+  list-style: none;
+  color: black;
+}
+
+.topbar__links li:hover {
+  list-style: none;
+  color: white;
+  border: solid 1px black;
+  background-color: black;
+}
+
+.topbar__search {
+  display: flex;
+  align-items: center;
+}
+
+.topbar__search--box {
+  border: solid 1px $water;
+  padding: 13px;
+  width: 220px;
+}
+
+.topbar__search--btn {
+  padding-right: 2.5em;
+}
+
+.topbar__search--btn a {
+  color: white;
+  background-color: $water;
+  padding: 4px 10px 4px 10px;
+}
+
+.topbar__login a {
+  color: black;
+}
+
+// nav - bottombar
+
+// main
 main {
   display: flex;
   margin-bottom: 1.5em;
