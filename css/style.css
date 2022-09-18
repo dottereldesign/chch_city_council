@@ -78,13 +78,39 @@ select {
 h2 {
   font-weight: 600; }
 
+h3 {
+  font-size: 1.25rem;
+  color: #098484;
+  font-weight: 600; }
+
+h3:hover {
+  text-decoration: underline; }
+
+h4 {
+  color: #098484;
+  font-weight: 600;
+  font-size: 0.938rem; }
+
+h4:hover {
+  text-decoration: underline; }
+
+a {
+  text-decoration: none; }
+
+body {
+  width: 1140px;
+  margin: 0 auto; }
+
 main {
   display: flex;
-  width: 1440px;
-  margin: 0 auto; }
+  margin-bottom: 1.5em; }
 
 .hero {
   position: relative; }
+
+.hero__image img {
+  width: 760px;
+  height: 400px; }
 
 .hero__text {
   display: flex;
@@ -135,7 +161,6 @@ main {
     flex-wrap: wrap;
     padding-bottom: 5px; }
     .iwantto .iwantto__tags a {
-      text-decoration: none;
       color: #098484;
       background: white;
       font-size: 0.875rem;
@@ -165,9 +190,37 @@ main {
     font-weight: 600;
     font-size: 0.875rem;
     white-space: nowrap;
-    margin: 0.4em 0.3em 0 0.3em;
+    margin: 0.3em 0.3em 0 0.3em;
     border: solid 3px #12a4a4; }
   .iwantto .iwantto__language a:hover {
     background: black;
     color: white;
     border: solid 3px black; }
+
+article {
+  display: flex; }
+
+.news,
+.whatson,
+.thecouncil {
+  width: 365px;
+  padding-right: 15px; }
+
+.news {
+  display: flex;
+  flex-direction: column; }
+  .news .news__underline {
+    background: #098484;
+    height: 3px;
+    width: 25px;
+    margin-bottom: 1em; }
+  .news p {
+    color: #414042;
+    font-size: 0.938rem; }
+
+.news__flex,
+.news__flex2 {
+  display: flex; }
+
+.news__flex {
+  margin-bottom: 3em; }

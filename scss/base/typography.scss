@@ -19,3 +19,23 @@
 h2 {
   font-weight: 600;
 }
+
+h3 {
+  font-size: 1.25rem;
+  color: $water;
+  font-weight: 600;
+}
+
+h3:hover {
+  text-decoration: underline;
+}
+
+h4 {
+  color: $water;
+  font-weight: 600;
+  font-size: 0.938rem;
+}
+
+h4:hover {
+  text-decoration: underline;
+}

@@ -1,12 +1,26 @@
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 1140px;
+  margin: 0 auto;
+}
+
 // main
+
 main {
   display: flex;
-  width: 1440px;
-  margin: 0 auto;
+  margin-bottom: 1.5em;
 }
 
 .hero {
   position: relative;
+}
+
+.hero__image img {
+  width: 760px;
+  height: 400px;
 }
 
 .hero__text {
@@ -70,7 +84,6 @@ main {
     padding-bottom: 5px;
 
     a {
-      text-decoration: none;
       color: $water;
       background: white;
       font-size: 0.875rem;
@@ -109,7 +122,7 @@ main {
       font-weight: 600;
       font-size: 0.875rem;
       white-space: nowrap;
-      margin: 0.4em 0.3em 0 0.3em;
+      margin: 0.3em 0.3em 0 0.3em;
       border: solid 3px $teal;
     }
 
@@ -119,4 +132,42 @@ main {
       border: solid 3px black;
     }
   }
+}
+
+// article
+article {
+  display: flex;
+}
+
+.news,
+.whatson,
+.thecouncil {
+  width: 365px;
+  padding-right: 15px;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+
+  .news__underline {
+    background: $water;
+    height: 3px;
+    width: 25px;
+    margin-bottom: 1em;
+  }
+
+  p {
+    color: $lightblack;
+    font-size: 0.938rem;
+  }
+}
+
+.news__flex,
+.news__flex2 {
+  display: flex;
+}
+
+.news__flex {
+  margin-bottom: 3em;
 }
