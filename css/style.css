@@ -125,27 +125,49 @@ main {
 .iwantto {
   background: #12a4a4;
   width: 500px;
-  height: 500px;
   color: white;
   width: 380px;
-  padding: 1em; }
-  .iwantto .iwantto__tags a {
-    text-decoration: none;
-    color: #0a5f5f;
-    background: white;
-    font-size: 0.875rem; }
-  .iwantto .iwantto__tags a:hover {
-    background: black;
-    color: white; }
+  padding: 0.7em 0.7em 0 0.7em; }
+  .iwantto h2 {
+    padding-bottom: 4px; }
+  .iwantto .iwantto__tags {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5px; }
+    .iwantto .iwantto__tags a {
+      text-decoration: none;
+      color: #098484;
+      background: white;
+      font-size: 0.875rem;
+      white-space: nowrap;
+      border-top: solid 2px white;
+      border-bottom: solid 2px white;
+      border-left: solid 5px white;
+      border-right: solid 5px white;
+      margin: 3px; }
+    .iwantto .iwantto__tags a:hover {
+      background: black;
+      color: white;
+      border-top: solid 2px black;
+      border-bottom: solid 2px black;
+      border-left: solid 5px black;
+      border-right: solid 5px black; }
   .iwantto .iwantto__line {
     width: 100%;
     background-color: white;
     height: 1px; }
+  .iwantto .iwantto__language {
+    display: flex;
+    flex-wrap: wrap; }
   .iwantto .iwantto__language a {
     text-decoration: none;
     color: white;
     font-weight: 600;
-    font-size: 0.875rem; }
+    font-size: 0.875rem;
+    white-space: nowrap;
+    margin: 0.4em 0.3em 0 0.3em;
+    border: solid 3px #12a4a4; }
   .iwantto .iwantto__language a:hover {
     background: black;
-    color: white; }
+    color: white;
+    border: solid 3px black; }

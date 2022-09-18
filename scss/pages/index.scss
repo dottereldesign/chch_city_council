@@ -56,22 +56,39 @@ main {
 .iwantto {
   background: $teal;
   width: 500px;
-  height: 500px;
   color: white;
   width: 380px;
-  padding: 1em;
+  padding: 0.7em 0.7em 0 0.7em;
+
+  h2 {
+    padding-bottom: 4px;
+  }
 
   .iwantto__tags {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5px;
+
     a {
       text-decoration: none;
       color: $water;
       background: white;
       font-size: 0.875rem;
+      white-space: nowrap;
+      border-top: solid 2px white;
+      border-bottom: solid 2px white;
+      border-left: solid 5px white;
+      border-right: solid 5px white;
+      margin: 3px;
     }
 
     a:hover {
       background: black;
       color: white;
+      border-top: solid 2px black;
+      border-bottom: solid 2px black;
+      border-left: solid 5px black;
+      border-right: solid 5px black;
     }
   }
 
@@ -82,16 +99,24 @@ main {
   }
 
   .iwantto__language {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .iwantto__language {
     a {
       text-decoration: none;
       color: white;
       font-weight: 600;
       font-size: 0.875rem;
+      white-space: nowrap;
+      margin: 0.4em 0.3em 0 0.3em;
+      border: solid 3px $teal;
     }
 
     a:hover {
       background: black;
       color: white;
+      border: solid 3px black;
     }
   }
 }
