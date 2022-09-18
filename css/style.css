@@ -75,16 +75,16 @@ select {
 .hero__text--readmore {
   font-size: 1.25rem; }
 
+h2 {
+  font-weight: 600; }
+
 main {
-  display: flex; }
+  display: flex;
+  width: 1440px;
+  margin: 0 auto; }
 
 .hero {
-  position: relative;
-  width: 760px; }
-
-.hero__image img {
-  width: 760px;
-  height: 400px; }
+  position: relative; }
 
 .hero__text {
   display: flex;
@@ -121,3 +121,31 @@ main {
   .hero:hover .hero__text--paddingleft {
     background: black;
     display: inline; }
+
+.iwantto {
+  background: #12a4a4;
+  width: 500px;
+  height: 500px;
+  color: white;
+  width: 380px;
+  padding: 1em; }
+  .iwantto .iwantto__tags a {
+    text-decoration: none;
+    color: #0a5f5f;
+    background: white;
+    font-size: 0.875rem; }
+  .iwantto .iwantto__tags a:hover {
+    background: black;
+    color: white; }
+  .iwantto .iwantto__line {
+    width: 100%;
+    background-color: white;
+    height: 1px; }
+  .iwantto .iwantto__language a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 0.875rem; }
+  .iwantto .iwantto__language a:hover {
+    background: black;
+    color: white; }

@@ -1,16 +1,12 @@
 // main
 main {
   display: flex;
+  width: 1440px;
+  margin: 0 auto;
 }
 
 .hero {
   position: relative;
-  width: 760px;
-}
-
-.hero__image img {
-  width: 760px;
-  height: 400px;
 }
 
 .hero__text {
@@ -23,12 +19,12 @@ main {
   width: 10px;
   height: 120px;
   display: block;
-  background: #12a4a4;
+  background: $teal;
 }
 
 .hero__text--heading p,
 .hero__text--readmore p {
-  background: #12a4a4;
+  background: $teal;
   display: inline;
   padding-right: 10px;
   box-decoration-break: clone;
@@ -44,7 +40,6 @@ main {
 
 .hero__text--readmore p {
   padding-bottom: 3px;
-
   padding-top: 5px;
 }
 
@@ -55,5 +50,48 @@ main {
   .hero__text--paddingleft {
     background: black;
     display: inline;
+  }
+}
+
+.iwantto {
+  background: $teal;
+  width: 500px;
+  height: 500px;
+  color: white;
+  width: 380px;
+  padding: 1em;
+
+  .iwantto__tags {
+    a {
+      text-decoration: none;
+      color: $water;
+      background: white;
+      font-size: 0.875rem;
+    }
+
+    a:hover {
+      background: black;
+      color: white;
+    }
+  }
+
+  .iwantto__line {
+    width: 100%;
+    background-color: white;
+    height: 1px;
+  }
+
+  .iwantto__language {
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      font-size: 0.875rem;
+    }
+
+    a:hover {
+      background: black;
+      color: white;
+    }
   }
 }
