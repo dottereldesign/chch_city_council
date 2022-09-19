@@ -339,10 +339,29 @@ section {
     width: 368.59px; }
 
 footer {
-  background-color: black; }
+  background-color: black;
+  padding-bottom: 2em; }
 
 footer a {
   color: white; }
+
+.footer__contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1em; }
+
+.footer__contact--direct {
+  display: flex;
+  width: 500px;
+  justify-content: space-between; }
+
+.footer__contact--social {
+  display: flex;
+  width: 475px;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  padding-right: 3em; }
 
 .footer__contact--btn a {
   font-size: 1.125rem; }
@@ -352,5 +371,24 @@ footer a {
   display: flex;
   flex-direction: column; }
 
-.fa-phone {
+i {
   color: white; }
+
+.footer__seperator {
+  width: 1140px;
+  height: 1px;
+  background-color: white; }
+
+.footer__contact--facebook,
+.footer__contact--twitter,
+.footer__contact--neighbourly,
+.footer__contact--youtube,
+.footer__contact--instagram,
+.footer__contact--linkedin {
+  width: 40px;
+  height: 40px;
+  border: solid 3px white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  vertical-align: middle; }
