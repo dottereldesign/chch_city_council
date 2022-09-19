@@ -376,3 +376,38 @@ i {
   line-height: 35px;
   vertical-align: middle;
 }
+
+.footer__second {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__seperator {
+  margin: 1.3em 0 1.3em 0;
+}
+
+.footer__third {
+  padding-bottom: 0.5em;
+}
+
+.footer__third a {
+  padding-right: 1.7em;
+}
+
+.footer__four {
+  display: flex;
+  align-items: center;
+}
+
+.footer__four a {
+  padding-right: 0.5em;
+  vertical-align: middle;
+}
+
+.footer__four > a {
+  padding-right: 2.5em;
+}
+
+.footer__languages {
+  font-size: 0.875rem;
+}
