@@ -2,9 +2,6 @@ a {
   text-decoration: none;
 }
 
-body {
-}
-
 nav,
 main,
 .footer__margin,
@@ -56,12 +53,13 @@ section {
 
 .topbar__search--box {
   border: solid 1px $water;
-  padding-left: 1px;
+  padding-left: 2px;
   width: 220px;
 }
 
 .topbar__search--box:focus {
   outline: none;
+  border: 1px solid black;
 }
 
 .topbar__search--btn {
@@ -69,6 +67,10 @@ section {
 }
 
 .topbar__search--btn a {
+  &:hover {
+    color: white;
+    background-color: black;
+  }
   color: white;
   background-color: $water;
   padding: 4px 10px 4px 10px;
@@ -76,6 +78,12 @@ section {
 
 .topbar__login a {
   color: $lightblack;
+}
+
+.topbar__login:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
 }
 
 // nav - bottombar
@@ -88,6 +96,12 @@ section {
 .bottombar__links a {
   list-style: none;
   color: $lightblack;
+}
+
+.bottombar__links a:hover {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2px;
 }
 
 .bottombar__links--seperator {
@@ -475,13 +489,13 @@ i {
   font-size: 0.8rem;
 }
 
-.footer__five > img {
-  width: 185px;
-}
-
 .footer__five a > img {
   width: 35px;
   height: 35px;
+}
+
+.footer__five > img {
+  width: 185px;
 }
 
 .footer__five > ul {
