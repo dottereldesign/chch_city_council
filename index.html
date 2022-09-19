@@ -43,9 +43,9 @@
             </div>
 
             <div class="topbar__search">
-                <div class="topbar__search--box">
 
-                </div>
+                <input class="topbar__search--box" type="search" id="site-search" name="q">
+
                 <div class="topbar__search--btn">
                     <a href="#">Search</a>
                 </div>
@@ -308,19 +308,27 @@
                 <a href="#">Contact us</a>
             </div>
             <div class="footer__contact">
+
                 <div class="footer__contact--direct">
-                    <div class="footer__contact--phone">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
+
+                    <div class="footer__contact--flex">
+                        <div class="footer__contact--phone">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </div>
                         <a href="#">03 941 8999</a>
                     </div>
-                    <div class="footer__contact--location">
-                        <img src="" alt="">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+
+                    <div class="footer__contact--flex">
+                        <div class="footer__contact--location">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </div>
                         <a href="#">Visit a service centre</a>
                     </div>
-                    <div class="footer__contact--email">
-                        <img src="" alt="">
-                        <i class="fa fa-at" aria-hidden="true"></i>
+
+                    <div class="footer__contact--flex">
+                        <div class="footer__contact--email">
+                            <i class="fa fa-at" aria-hidden="true"></i>
+                        </div>
                         <a href="#">Send us an email</a>
                     </div>
                 </div>
@@ -395,10 +403,36 @@
                     <a href="#">हिंदी</a>
                 </div>
             </div>
+
+            <div class="footer__five">
+                <a href="#">© Christchurch City Council</a>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Terms of use</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Copyright</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+                <img src="images/nz-govt-logo-white.svg" alt="">
+                <a href="#" id="shielded-logo">
+                    <img alt="shielded" src="https://shielded.co.nz/img/custom-logo.png" height="60" width="60"></a>
+            </div>
         </div>
-
-
     </footer>
+
+    <script src="https://staticcdn.co.nz/embed/embed.js"></script>
+    <script>
+        (function () {
+            window.onload = function () {
+                var frameName = new ds07o6pcmkorn({
+                    openElementId: "#shielded-logo",
+                    modalID: "modal",
+                });
+                frameName.init();
+            }
+        })();
+    </script>
 </body>
 
 </html>
