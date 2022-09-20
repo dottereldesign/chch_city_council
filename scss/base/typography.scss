@@ -30,6 +30,12 @@ h3:hover {
   text-decoration: underline;
 }
 
+h3:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
+}
+
 h4 {
   color: $water;
   font-weight: 600;

@@ -86,6 +86,11 @@ h3 {
 h3:hover {
   text-decoration: underline; }
 
+h3:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px; }
+
 h4 {
   color: #098484;
   font-weight: 600;
@@ -197,6 +202,25 @@ section {
 .nav__dropdown {
   display: none; }
 
+.nav__dropdown h3 {
+  color: white;
+  padding-bottom: 0.5em; }
+
+.nav__dropdown > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style: none;
+  padding: 0 0 2em 0;
+  margin: 0; }
+
+.nav__dropdown li {
+  color: white;
+  padding-bottom: 0.5em; }
+  .nav__dropdown li:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px; }
+
 .show {
   display: block; }
 
@@ -213,21 +237,6 @@ input[type="reset"] {
   font: inherit;
   cursor: pointer;
   outline: inherit; }
-
-.nav__dropdown h3 {
-  color: white;
-  padding-bottom: 0.5em; }
-
-.nav__dropdown > ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  list-style: none;
-  padding: 0 0 2em 0;
-  margin: 0; }
-
-.nav__dropdown li {
-  color: white;
-  padding-bottom: 0.5em; }
 
 main {
   display: flex;
